@@ -8,19 +8,15 @@
 <body>
 
     <script>
-let nome = deivid;
-let idade = 17;
+let nome = prompt("Qual o seu nome?");
+let idade = prompt("Qual é a sua idade?");
 let mains
-if (mains <= 18) {
-    faixaetaria = "criança";
-}
-if (mains = 20) {
-    faixaetaria = "Adulto";
-}
-if (mains = 60) {
-    faixaetaria = "idoso";
-}
-console.log("Bom dia" + nome + "você é" + mains)
+if (idade < 18)  mains = "menor de idade";
+
+else if (idade >= 18 && idade < 60) {
+    mains = "adulto"
+}  else mains = "idoso"
+alert("Bom dia," + nome + "você é" + mains + "...")
 
     </script>
 </body>
